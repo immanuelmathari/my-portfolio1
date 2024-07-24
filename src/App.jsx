@@ -5,6 +5,7 @@ const App = () => {
   return (
     <main className='overflow-x-hidden'>
       <Navbar />
+      <Hero />
     </main>
   )
 }
