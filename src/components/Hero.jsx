@@ -12,7 +12,7 @@ const Hero = () => {
           <div className='grid grid-cols-1 md:grid-cols-3 min-h-[600px] place-items-center gap-10'>
         {/* image section */}
         <div className='grid col-span-2 relative h-full justify-center'>
-        <div className='w-[450px]'>
+        <div className='w-[280px]'>
             <h1 className='text-6xl font-bold relative z-20'>Immanuel Mathari</h1>
             <div className='h-[4px] w-[30px] bg-primary mt-4'></div>
         </div>
@@ -32,7 +32,7 @@ const Hero = () => {
         {/* text section */}
         <div className='space-y-7 font-bold leading-tight pl-16'>
           <p className='text-sm opacity-70 tracking-widest font-serif translate-y-3'>- Introduction</p>
-          <h1 className='text-3xl'>
+          <h1 className='text-2xl md:text-3xl'>
             Product Designer and developer, based in California
           </h1>
           <p className='text-sm leading-6 opacity-70'>lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae optio, eos saepe dolore est asperiores.</p>

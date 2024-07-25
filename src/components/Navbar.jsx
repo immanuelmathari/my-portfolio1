@@ -28,12 +28,12 @@ const Navbar = () => {
             <img src={Logo} alt="sorry" className='w-16' />
         </div>
         <div>
-            <ul className='flex justify-center gap-5'>
+            <ul className='hidden md:flex justify-center gap-10'>
                 {
                     NavMenu.map((item) => {
                         return (
                             <li key={item.id}>
-                                <a href={item.link}>{item.title}</a>
+                                <a href={item.link} className='hover:text-primary textxl font-semibold text-white/70 duration-300'>{item.title}</a>
                             </li>
                         )
                     }) 
