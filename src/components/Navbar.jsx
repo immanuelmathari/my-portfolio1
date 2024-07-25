@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../assets/react.svg'
+import { GiHamburgerMenu } from 'react-icons/gi'
 
 const NavMenu = [
     {
@@ -39,6 +40,9 @@ const Navbar = () => {
                     }) 
                 }
             </ul>
+            <div className='md:hidden'>
+                <GiHamburgerMenu className='text-3xl' />
+            </div>
         </div>
         </div>
     </div>

@@ -9,7 +9,8 @@ const Hero = () => {
   return ( 
     <main className='bg-gray text-white'>
         <div className='container'>
-          <div className='grid grid-cols-1 md:grid-cols-3 min-h-[600px] place-items-center gap-10'>
+          {/* note the use of overflow y hidden */}
+          <div className='grid grid-cols-1 lg:overflow-y-hidden md:grid-cols-3 min-h-[600px] place-items-center gap-10'>
         {/* image section */}
         <div className='grid col-span-2 relative h-full justify-center'>
         <div className='w-[280px]'>
