@@ -47,7 +47,7 @@ const Skills = () => {
                 })
             }
         </div>
-        {/* Company Logo sextion */}
+        {/* Company Logo sextion = brands ive worked with */}
         <div className='flex gap-5 flex-wrap items-center justify-center'>
             <img src={Logo} alt='company logo' className='bg-white/15 p-4' />
             <img src={Logo} alt='company logo' className='bg-white/15 p-4' />
