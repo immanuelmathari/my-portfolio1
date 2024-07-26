@@ -31,7 +31,7 @@ const Hero = () => {
        
         </div>
         {/* text section */}
-        <div className='space-y-7 font-bold leading-tight pl-16'>
+        <div className='space-y-7 font-bold leading-tight pl-10'>
           <p className='text-sm opacity-70 tracking-widest font-serif translate-y-3'>- Introduction</p>
           <h1 className='text-2xl md:text-3xl'>
             Product Designer and developer, based in California
