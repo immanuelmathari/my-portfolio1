@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .img-shadow {
+        /* try with say -40 */
+        filter: drop-shadow(40px 50px 25px #0f1115); 
+    }
+}

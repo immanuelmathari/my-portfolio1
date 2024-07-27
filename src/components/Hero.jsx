@@ -25,7 +25,7 @@ const Hero = () => {
     <main className='bg-gray text-white'>
         <div className='container'>
           {/* note the use of overflow y hidden */}
-          <div className='grid grid-cols-1 lg:overflow-y-hidden md:grid-cols-3 min-h-[600px] place-items-center gap-10'>
+          <div className='grid grid-cols-1 lg:overflow-y-hidden lg:overflow-x-hidden md:grid-cols-3 min-h-[600px] place-items-center gap-10'>
         {/* image section */}
         <div className='grid col-span-2 relative h-full justify-center'>
         <div className='w-[280px]'>
@@ -34,7 +34,7 @@ const Hero = () => {
         </div>
          
         <div className=''>            
-            <motion.img initial={{x: -100}} whileInView={{x: 0}} transition={{ duration: 1}} src={Person} alt="Immanuel Mathari" className='w-[400px] scale-125 relative z-10'/>
+            <motion.img initial={{x: -100}} whileInView={{x: 0}} transition={{ duration: 1}} src={Person} alt="Immanuel Mathari" className='img-shadow w-[400px] scale-125 relative z-10'/>
         </div>
 
         {/* social contacts handles  */}
