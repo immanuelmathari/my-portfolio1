@@ -34,13 +34,13 @@ const Hero = () => {
         </div>
          
         <div className=''>            
-            <img src={Person} alt="Immanuel Mathari" className='w-[400px] scale-125 relative z-10'/>
+            <motion.img initial={{x: -100}} whileInView={{x: 0}} transition={{ duration: 1}} src={Person} alt="Immanuel Mathari" className='w-[400px] scale-125 relative z-10'/>
         </div>
 
         {/* social contacts handles  */}
         <div className='flex gap-4 mt-8'>
           {/* motions should work in divs */}
-          <motion.div variants={container(0.8)} initial="hidden" whileInView="show">
+          <motion.div variants={container(0.8)} initial={"hidden"} whileInView="show">
           <FaDribbble className='text-3xl hover:scale-125 cursor-pointer duration-200' />
             </motion.div>
             <motion.div variants={container(1.0)} initial="hidden" whileInView="show">
@@ -54,12 +54,12 @@ const Hero = () => {
         </div>
         {/* text section */}
         <div className='space-y-7 font-bold leading-tight pl-10'>
-          <p className='text-sm opacity-70 tracking-widest font-serif translate-y-3'>- Introduction</p>
-          <h1 className='text-2xl md:text-3xl'>
+          <motion.p variants={container(0.4)} initial="hidden" whileInView="show" className='text-sm opacity-70 tracking-widest font-serif translate-y-3'>- Introduction</motion.p>
+          <motion.h1 variants={container(0.5)} initial="hidden" whileInView="show" className='text-2xl md:text-3xl'>
             Product Designer and developer, based in California
-          </h1>
-          <p className='text-sm leading-6 opacity-70'>lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae optio, eos saepe dolore est asperiores.</p>
-          <button className='text-primary border border-b-2 border-primary text-xl font-bold p-2 hover:text-black hover:bg-primary hover:translate-x-4 transition-all duration-300 flex items-center gap-4'>My Story <FaArrowRight className='text-sm hover:translate-x-1 transition duration-200'/> </button>
+          </motion.h1>
+          <motion.p variants={container(0.6)} initial="hidden" whileInView={"show"} className='text-sm leading-6 opacity-70'>lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae optio, eos saepe dolore est asperiores.</motion.p>
+          <motion.button variants={container(0.7)} initial="hidden" whileInView="show"className='text-primary border border-b-2 border-primary text-xl font-bold p-2 hover:text-black hover:bg-primary hover:translate-x-4 transition-all duration-300 flex items-center gap-4'>My Story <FaArrowRight className='text-sm hover:translate-x-1 transition duration-200'/> </motion.button>
         </div>
         </div>
         </div>
