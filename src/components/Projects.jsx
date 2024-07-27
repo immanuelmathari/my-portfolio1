@@ -29,7 +29,7 @@ const Projects = () => {
     <div className='bg-darkGray text-white py-10'>
 
     <div className='container'>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 items-center gap-6'>
             <section className='space-y-7 lg:max-w-[380px]'>
                 <p className='text-sm opacity-50 tracking-widest font-serif translate-y-3'>Projects</p>
                 <h1 className='text-2xl lg:text-3xl'>All creating works, seleted projects.</h1>
@@ -41,9 +41,9 @@ const Projects = () => {
             {
                 projects.map((project) => {
                     return (
-                        <div key={project.id} className='space-y-7 px-4'>
-                            <img src={project.img} alt="" className='w-full' />
-                            <p className='text-3xl'>{project.title}</p>
+                        <div key={project.id} className='space-y-4 p-4 justify-center'>
+                            <img src={project.img} alt="" className='w-full hover:scale-110 hover:shadow-lg duration-300 cursor-pointer' />
+                            <p className='text-3xl font-semibold'>{project.title}</p>
                         </div>
                     )
                 })
