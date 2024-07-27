@@ -2,8 +2,23 @@ import React from 'react';
 import Person from '../assets/6.png';
 import { FaArrowRight } from 'react-icons/fa';
 import { FaDribbble, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { motion } from "framer-motion"
 
 
+const container = (delay) => ({
+  hidden: {
+    opacity: 0,
+    x: 100,
+  },
+  show: {
+    opacity: 1,
+    x:0,
+    transition: {
+      duration: 0.5,
+      delay: delay,
+    },
+  },
+});
 
 const Hero = () => {
   return ( 
@@ -14,8 +29,8 @@ const Hero = () => {
         {/* image section */}
         <div className='grid col-span-2 relative h-full justify-center'>
         <div className='w-[280px]'>
-            <h1 className='text-6xl font-bold relative z-20'>Immanuel Mathari</h1>
-            <div className='h-[4px] w-[30px] bg-primary mt-4'></div>
+            <motion.h1 variants={container(0.3)} initial="hidden" whileInView="show" className='text-6xl font-bold relative z-20'>Immanuel Mathari</motion.h1>
+            <motion.div variants={container(0.6)} initial='hidden' whileInView="show" className='h-[4px] w-[30px] bg-primary mt-4'></motion.div>
         </div>
          
         <div className=''>            
@@ -24,9 +39,16 @@ const Hero = () => {
 
         {/* social contacts handles  */}
         <div className='flex gap-4 mt-8'>
+          {/* motions should work in divs */}
+          <motion.div variants={container(0.8)} initial="hidden" whileInView="show">
           <FaDribbble className='text-3xl hover:scale-125 cursor-pointer duration-200' />
+            </motion.div>
+            <motion.div variants={container(1.0)} initial="hidden" whileInView="show">
           <FaLinkedinIn className='text-3xl hover:scale-125 cursor-pointer duration-200' />
+          </motion.div>
+          <motion.div variants={container(1.2)} initial="hidden" whileInView="show">
           <FaInstagram className='text-3xl hover:scale-125 cursor-pointer duration-200' />
+          </motion.div>
         </div>
        
         </div>
