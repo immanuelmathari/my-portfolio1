@@ -34,7 +34,7 @@ const Skills = () => {
                 skills.map((skill) => {
                     return (
                         // max width makes our cards quite bigger. looks good
-                        <div key={skill.id} className='flex items-center bg-white/15 gap-6 px-7 py-12 max-w-[300px] hover:shadow-lg hover:scale-105 duration-300'>
+                        <div key={skill.id} className='flex items-center bg-white/15 gap-6 px-7 py-12 max-w-[300px] hover:shadow-lg hover:bg-primary hover:text-black hover:cursor-pointer hover:scale-105 duration-300'>
                             {skill.icon}
                             <div className='space-y-3'>
                             <h1 className='text-2xl font-bold'>
