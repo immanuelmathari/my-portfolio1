@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../assets/react.svg'
+import Logo from '../assets/roundmanu.jpg'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { motion } from "framer-motion"
 
@@ -7,22 +7,37 @@ import { motion } from "framer-motion"
 const NavMenu = [
     {
         id: 1,
-        title: "Services",
-        link: "#",
+        title: "About Me",
+        link: "#about",
         delay: 0.3,
     },
     {
         id: 2,
-        title: "Works",
-        link: "#",
+        title: "My SKillset",
+        link: "#skills",
         delay: 0.4,
     },
     {
         id: 3,
-        title: "Blog",
-        link: "#",
+        title: "My Projects",
+        link: "#projects",
         delay: 0.5,
     },
+    
+    {
+        id: 4,
+        title: "Mail Me",
+        link: "mailto:immanuelmathari@gmail.com",
+        delay: 0.5,
+    },
+    
+    {
+        id: 5,
+        title: "Call Me",
+        link: "tel:+254797952810",
+        delay: 0.5,
+    },
+
 ]
 
 const container = (delay) => ({

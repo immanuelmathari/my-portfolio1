@@ -47,7 +47,7 @@ const Blogs = () => {
             <div className='grid grid-cols-1 md:grid-cols-3 items-center gap-6'>
                 <section className='space-y-7 lg:max-w-[300px]'>
                     <motion.p variants={fadeUp(0.2)} initial="hidden" whileInView="show" className='text-sm opacity-50 tracking-widest font-serif translate-y-3'>
-                        Blogs
+                        Feature Under Development
                     </motion.p>
                     <motion.h1 variants={fadeUp(0.4)} initial="hidden" whileInView="show"  className='text-2xl lg:text-3xl'>
                         Recent Blogs
