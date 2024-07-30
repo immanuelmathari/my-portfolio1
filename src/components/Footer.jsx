@@ -26,7 +26,7 @@ const Footer = () => {
         <div className='container flex flex-col gap-3 justify-center items-center'>
             <motion.img initial={{ scale: 0, opacity: 0}} whileInView={{scale:1, opacity: 1}} transition={{duration: 0.4}} src={Logo} alt='logo' className='w-[100px]' />
             <motion.p initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.4, delay: 0.4}} className='text-white text-center text-sm'>Copyright &copy; 2024. All rights reserved</motion.p>
-            <motion.p initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.4, delay: 0.8}} className='text-white'>Available For Hire and Employment <a href='#' className='text-primary'>~ Developer Immanuel Mathari</a></motion.p>
+            <motion.p initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.4, delay: 0.8}} className='text-white'>Available For Hire  <a href='#' className='text-primary'>~ Developer Immanuel Mathari</a></motion.p>
         {/* social contacts handles  */}
         <div className='flex gap-4 mt-12 text-white'>
           {/* motions should work in divs */}
